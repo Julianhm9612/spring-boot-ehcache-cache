@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+        xmlns='http://www.ehcache.org/v3'
+        xsi:schemaLocation="http://www.ehcache.org/v3 http://www.ehcache.org/schema/ehcache-core.xsd">
+    <!-- Default cache configuration -->
+    <cache alias="myCache">
+        <expiry>
+            <ttl unit="seconds">300</ttl> <!-- Time to live (TTL) of 5 minutes -->
+        </expiry>
+        <resources>
+            <heap unit="entries">100</heap> <!-- Max 100 entries in memory -->
+            <disk persistent="true" unit="MB">500</disk> <!-- 500 MB disk storage -->
+        </resources>
+    </cache>
+    <!-- Additional cache configurations can go here -->
+</config>
