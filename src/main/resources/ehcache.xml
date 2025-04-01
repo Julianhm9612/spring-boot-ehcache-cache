@@ -3,6 +3,7 @@
         xmlns='http://www.ehcache.org/v3'
         xsi:schemaLocation="http://www.ehcache.org/v3 http://www.ehcache.org/schema/ehcache-core.xsd">
     <!-- Default cache configuration -->
+    <persistence directory="spring-boot-ehcache/cache" />
     <cache alias="myCache">
         <expiry>
             <ttl unit="seconds">300</ttl> <!-- Time to live (TTL) of 5 minutes -->
